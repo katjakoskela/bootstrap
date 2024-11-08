@@ -26,5 +26,5 @@
 
 /*alasvetovalikko*/
 .dropdown .dropdown-item {
-    color: #4f4b46;
+    color: #4f4b46 !important;
 }
