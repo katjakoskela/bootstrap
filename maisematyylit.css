@@ -23,3 +23,8 @@
 .custom-toggler .navbar-toggler {
     border-color: #576e62;
 }
+
+/*alasvetovalikko*/
+.dropdown .dropdown-menu {
+    background-color: #4f4b46;
+}
