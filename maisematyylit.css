@@ -25,6 +25,6 @@
 }
 
 /*alasvetovalikko*/
-.dropdown .dropdown-menu {
-    background-color: #4f4b46;
+.dropdown .dropdown-item {
+    color: #4f4b46;
 }
