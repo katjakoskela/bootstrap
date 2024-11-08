@@ -7,3 +7,9 @@
 .navbar-custom a {
     color: #4f4b46;
 }
+
+/* aktiivisen & hover-linkin väri */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #576e62;
+}
