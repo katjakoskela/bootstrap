@@ -1,0 +1,9 @@
+/* navipalkon väri*/
+.navbar-custom {
+    background-color: #e0d2c3;
+
+/*navipalkin linkin väri*/
+}
+.navbar-custom a {
+    color: #4f4b46;
+}
