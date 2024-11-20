@@ -26,6 +26,11 @@ body {
     color: #7a5c45;
 }
 
+/* Aktivoi linkin väri scroll-spy:n avulla */
+.nav-link.active {
+    color: white !important; /* Tekstin väri aktiiviselle linkille */
+}
+
 /* Hampurilaisvalikon sijainti oikeassa reunassa pienillä näytöillä */
 @media (max-width: 576px) {
     .navbar-custom .navbar-collapse {
