@@ -45,14 +45,14 @@
 
 /* Karusellin kuvat */
 .carousel-inner img {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
 /* Karusellin tekstien taustaväri */
 .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    background-color: rgba(140, 139, 139, 0.5);
+    color: #302c2c;
     padding: 10px;
 }
 
