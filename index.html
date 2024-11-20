@@ -140,21 +140,79 @@
         </div>
     </div>
 
+    <!-- Lomake -->
+<div class="container mt-5" id="lomake">
+  <h2>Lomake</h2>
+  <form id="myForm" onsubmit="return false">
+      <div class="mb-3">
+          <label for="nimi" class="form-label">Nimi:</label>
+          <input type="text" class="form-control" id="nimi" required placeholder="Anna nimesi">
+      </div>
+      <div class="mb-3">
+          <label for="email" class="form-label">Sähköposti:</label>
+          <input type="email" class="form-control" id="email" required placeholder="Anna sähköpostiosoitteesi">
+      </div>
+      <div class="mb-3">
+          <label for="puhelin" class="form-label">Puhelin:</label>
+          <input type="tel" class="form-control" id="puhelin" pattern="\+?[0-9 () \-]+" placeholder="Anna puhelinnumerosi">
+      </div>
+      <div class="mb-3">
+          <label for="palaute" class="form-label">Palaute:</label>
+          <textarea class="form-control" id="palaute" rows="3" placeholder="Anna palautteesi"></textarea>
+      </div>
+      <div class="mb-3">
+          <label class="form-label">Sukupuoli:</label>
+          <div>
+              <input type="radio" id="mies" name="sukupuoli" value="Mies" required> <label for="mies">Mies</label>
+              <input type="radio" id="nainen" name="sukupuoli" value="Nainen"> <label for="nainen">Nainen</label>
+          </div>
+      </div>
+      <div class="mb-3">
+          <label class="form-label">Harrastukset:</label>
+          <div>
+              <input type="checkbox" id="urheilu" name="harrastukset" value="Urheilu"> <label for="urheilu">Urheilu</label>
+              <input type="checkbox" id="lukeminen" name="harrastukset" value="Lukeminen"> <label for="lukeminen">Lukeminen</label>
+          </div>
+      </div>
+      <div class="mb-3">
+          <label for="valinta" class="form-label">Kaupunki:</label>
+          <select class="form-control" id="valinta">
+              <option value="Helsinki">Helsinki</option>
+              <option value="Tampere">Tampere</option>
+              <option value="Turku">Turku</option>
+          </select>
+      </div>
+      <button type="submit" class="btn btn-primary" onclick="tulostaTiedot()">Lähetä</button>
+  </form>
+</div>
+
+<!-- Yhteenveto -->
+<div id="tiedot" class="container mt-5">
+  <h3>Lomakkeen tiedot</h3>
+  <p id="tiedotNimi"></p>
+  <p id="tiedotEmail"></p>
+  <p id="tiedotPuhelin"></p>
+  <p id="tiedotPalaute"></p>
+  <p id="tiedotSukupuoli"></p>
+  <p id="tiedotHarrastukset"></p>
+  <p id="tiedotKaupunki"></p>
+</div>
+
     <!-- Yhteystiedot Taulukko -->
     <div class="container mt-5">
         <h2>Yhteystiedot</h2>
         <table class="table table-responsive">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Phone</th>
+                    <th>Nimi</th>
+                    <th>Sähköposti</th>
+                    <th>Puhelin</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>John Doe</td>
-                    <td>johndoe@example.com</td>
-                    <td>123-456-7890</td>
+                    <td>Katja Koskela</td>
+                    <td>katja@maisemat.com</td>
+                    <td>040 456 7890</td>
                 </tr>
                
