@@ -209,25 +209,25 @@
             var puhelin = document.getElementById("puhelin").value;
             var palaute = document.getElementById("palaute").value;
 
-            var sukupuoli = document.querySelector('input[name="vastaus"]:checked') ? document.querySelector('input[name="vastaus"]:checked').value : "Ei valittu";
-            var harrastukset = [];
-            var harrastusElements = document.getElementsByName("aktiviteetti");
-            for (var i = 0; i < harrastusElements.length; i++) {
-                if (harrastusElements[i].checked) {
-                    harrastukset.push(harrastusElements[i].value);
+            var vastaus = document.querySelector('input[name="vastaus"]:checked') ? document.querySelector('input[name="vastaus"]:checked').value : "Ei valittu";
+            var aktiviteetti = [];
+            var aktiviteettiElements = document.getElementsByName("aktiviteetti");
+            for (var i = 0; i < aktiviteettiElements.length; i++) {
+                if (aktiviteettiElements[i].checked) {
+                    aktiviteetti.push(aktiviteettiElements[i].value);
                 }
             }
-            harrastukset = harrastukset.length > 0 ? harrastukset.join(", ") : "Ei valittu";
+            aktiviteetti = aktiviteetti.length > 0 ? aktiviteetti.join(", ") : "Ei valittu";
 
-            var kaupunki = document.getElementById("valinta").value;
+            var maa = document.getElementById("valinta").value;
 
             document.getElementById("tiedotNimi").innerHTML = "Nimi: " + nimi;
             document.getElementById("tiedotEmail").innerHTML = "Sähköposti: " + email;
             document.getElementById("tiedotPuhelin").innerHTML = "Puhelin: " + puhelin;
             document.getElementById("tiedotPalaute").innerHTML = "Palaute: " + palaute;
-            document.getElementById("tiedotSukupuoli").innerHTML = "Onko taivas sininen: " + vastaus;
-            document.getElementById("tiedotHarrastukset").innerHTML = "Aktiviteetti luonnossa: " + aktiviteetti;
-            document.getElementById("tiedotKaupunki").innerHTML = "Maa: " + maa;
+            document.getElementById("tiedotVastaus").innerHTML = "Onko taivas sininen: " + vastaus;
+            document.getElementById("tiedotAktiviteetti").innerHTML = "Aktiviteetti luonnossa: " + aktiviteetti;
+            document.getElementById("tiedotMaa").innerHTML = "Maa: " + maa;
         }
     </script>
 
