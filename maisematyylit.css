@@ -39,8 +39,25 @@
 }
 
 /* alasvetovalikon linkkien väri */
-.dropdown .dropdown-item {
-    color: #5a4636 !important;
+.nav-item.dropdown .dropdown-toggle {
+    color: #4a3c31; /* Linkin väri */
+}
+
+.nav-item.dropdown:hover .dropdown-toggle {
+    color: #7a5c45; /* Hover-tilan väri */
+}
+
+.dropdown-menu {
+    background-color: #d0b9a1; /* Taustan väri dropdownille */
+}
+
+.dropdown-item {
+    color: #4a3c31; /* Linkin väri */
+}
+
+.dropdown-item:hover {
+    background-color: #7a5c45; /* Hover-tilan taustaväri */
+    color: white; /* Hover-tilan tekstin väri */
 }
 
 /* Karusellin kuvat */
