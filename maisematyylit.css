@@ -1,7 +1,8 @@
-/* Poppins fontti koko sivulla */
+/* Lora fontti */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lora', serif;
 }
+
 
 /* Tekstiosion marginaali, jotta se ei mene navigaatiopalkin alle */
 #tekstiosio {
