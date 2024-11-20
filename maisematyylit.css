@@ -5,12 +5,12 @@
     }
 }
 
-/* navipalkon väri*/
+/* navipalkin väri */
 .navbar-custom {
     background-color: #e0d2c3;
-
-/*navipalkin linkin väri*/
 }
+
+/* navipalkin linkin väri */
 .navbar-custom a {
     color: #4f4b46;
 }
@@ -21,17 +21,46 @@
     color: #576e62;
 }
 
-/*hampurilaiskuvion väri*/
+/* hampurilaiskuvion väri */
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#bfacb3' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  }
-  
-/*reubuksen väri*/
+}
+
+/* hampurilaiskuvion reunan väri */
 .custom-toggler .navbar-toggler {
     border-color: #576e62;
 }
 
-/*alasvetovalikko*/
+/* alasvetovalikon linkkien väri */
 .dropdown .dropdown-item {
     color: #4f4b46 !important;
+}
+
+/* Karusellin kuvat */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Karusellin tekstien taustaväri */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+}
+
+/* Grid-asettelun kuvat */
+#grid img {
+    max-width: 100%;
+    border-radius: 30%; /* Pyöristetyt kulmat */
+}
+
+/* Lomakekentät */
+form .form-control {
+    border-radius: 5px;
+}
+
+/* Taulukon responsiivisuus */
+.table-responsive {
+    overflow-x: auto;
 }
