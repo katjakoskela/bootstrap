@@ -119,6 +119,36 @@ form .form-control {
     margin-bottom: 10px;
 }
 
+/* Cardit - Pieniä sääntöjä gridin kuville */
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Lisätty hover-efekti taulukon riveille */
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Video iframe */
+iframe {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Lomakekenttien ulkoasu */
+.form-label {
+    font-weight: 600;
+}
+
+/* Yhteenveto */
+#tiedot {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+}
+
 h2, h5 {
     margin-top: 20px;
 }
