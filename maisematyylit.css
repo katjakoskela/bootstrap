@@ -43,6 +43,16 @@ body {
     border-color: #6c4e3b;
 }
 
+/* Navigaation linkkien sijoittaminen oikeaan reunaan */
+.navbar-nav.ms-auto {
+    margin-left: auto;
+}
+
+/* Scroll-efekti */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Karusellin kuvat */
 .carousel-inner img {
     width: 70%;
