@@ -161,25 +161,25 @@
           <textarea class="form-control" id="palaute" rows="3" placeholder="Anna palautteesi"></textarea>
       </div>
       <div class="mb-3">
-          <label class="form-label">Sukupuoli:</label>
+          <label class="form-label">Onko taivas sininen:</label>
           <div>
-              <input type="radio" id="mies" name="sukupuoli" value="Mies" required> <label for="mies">Mies</label>
-              <input type="radio" id="nainen" name="sukupuoli" value="Nainen"> <label for="nainen">Nainen</label>
+              <input type="radio" id="kylla" name="vastaus" value="Kyllä" required> <label for="kylla">Kyllä</label>
+              <input type="radio" id="ei" name="vastaus" value="Ei"> <label for="ei">Ei</label>
           </div>
       </div>
       <div class="mb-3">
-          <label class="form-label">Harrastukset:</label>
+          <label class="form-label">Lempi aktivitetti luonnossa:</label>
           <div>
-              <input type="checkbox" id="urheilu" name="harrastukset" value="Urheilu"> <label for="urheilu">Urheilu</label>
-              <input type="checkbox" id="lukeminen" name="harrastukset" value="Lukeminen"> <label for="lukeminen">Lukeminen</label>
+              <input type="checkbox" id="lenkkeily" name="aktiviteetti" value="Lenkkeily"> <label for="Lenkkeily">Lenkkeily</label>
+              <input type="checkbox" id="bongaus" name="aktiviteetti" value="Bongaus"> <label for="Bongaus">Bongaus</label>
           </div>
       </div>
       <div class="mb-3">
-          <label for="valinta" class="form-label">Kaupunki:</label>
+          <label for="valinta" class="form-label">Maa:</label>
           <select class="form-control" id="valinta">
-              <option value="Helsinki">Helsinki</option>
-              <option value="Tampere">Tampere</option>
-              <option value="Turku">Turku</option>
+              <option value="Helsinki">Suomi</option>
+              <option value="Tampere">Egypti</option>
+              <option value="Turku">Yhtysvallat</option>
           </select>
       </div>
       <button type="submit" class="btn btn-primary" onclick="tulostaTiedot()">Lähetä</button>
