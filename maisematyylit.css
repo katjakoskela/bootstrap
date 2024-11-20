@@ -17,9 +17,10 @@
 
 /* Navipalki  logon määrittely */
 .navbar-brand img {
-    height: 40px; 
-    width: auto;  
-}
+        height: auto;
+        max-height: 50px;
+        width: auto;
+    }
 
 /* aktiivisen & hover-linkin väri */
 .navbar-custom .nav-item.active .nav-link,
