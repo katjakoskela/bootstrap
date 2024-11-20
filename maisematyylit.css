@@ -1,7 +1,7 @@
-/* Lora fontti */
-body {
-    font-family: 'Dancing Script', cursive;
-}
+/* google fontti */
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
 
 /* Tekstiosion marginaali, jotta se ei mene navigaatiopalkin alle */
 #tekstiosio {
