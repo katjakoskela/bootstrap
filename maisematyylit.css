@@ -25,7 +25,7 @@
 /* aktiivisen & hover-linkin väri */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-    color: #576e62;
+    color: #58515a;
 }
 
 /* hampurilaiskuvion väri */
@@ -45,7 +45,7 @@
 
 /* Karusellin kuvat */
 .carousel-inner img {
-    width: 80%;
+    width: 70%;
     height: auto;
 }
 
