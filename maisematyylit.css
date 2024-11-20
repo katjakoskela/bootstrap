@@ -15,6 +15,12 @@
     color: #4f4b46;
 }
 
+/* Navipalki  logon määrittely */
+.navbar-brand img {
+    height: 40px; 
+    width: auto;  
+}
+
 /* aktiivisen & hover-linkin väri */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
