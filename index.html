@@ -84,7 +84,7 @@
 
     <!-- Grid -->
     <div id="grid" class="container mt-5">
-      <h2>Grid-asettelu</h2>
+      <h2>Kauniita generoituja kuvia</h2>
       <div class="row">
           <div class="col-md-4">
               <img src="https://raw.githubusercontent.com/katjakoskela/bootstrap/main/maisemakuva3.png" class="img-fluid" alt="Talvimaisema, luotu tekoälyllä.">
@@ -100,6 +100,42 @@
           </div>
       </div>
   </div>
+
+  <!-- Accordion (Haitarimalli) -->
+  <div class="container mt-5">
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Järvimaisema
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="d-flex">
+                        <img src="https://raw.githubusercontent.com/katjakoskela/bootstrap/main/maisemakuva11.png" class="img-fluid" alt="Järvimaisema, kuva luotu tekoälyllä." style="width: 50%; margin-right: 10px;">
+                        <p>Tekoälyllä luotu järvimaisema.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Vuonomaisema
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="d-flex">
+                        <img src="https://raw.githubusercontent.com/katjakoskela/bootstrap/main/maisemakuva10.png" class="img-fluid" alt="Vuonomaisema, kuva luotu tekoälyllä." style="width: 50%; margin-right: 10px;">
+                        <p>Tekoälyllä luotu vuonomaisema.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- Cardit -->
     <div class="container mt-5">
