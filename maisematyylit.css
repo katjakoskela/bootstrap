@@ -3,6 +3,24 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Tekstiosion marginaali, jotta se ei mene navigaatiopalkin alle */
+#tekstiosio {
+    background-color: #f8f8f8;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 80px; 
+}
+
+#tekstiosio h2 {
+    color: #4a3c31;
+    font-weight: 600;
+}
+
+#tekstiosio p {
+    color: #302c2c;
+    font-size: 1.1rem;
+}
+
 /* navipalkin väri */
 .navbar-custom {
     background-color: #d0b9a1;
