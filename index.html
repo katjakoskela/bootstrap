@@ -8,7 +8,7 @@
     <title>Maisemakirjasto</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="maisematyylit.css" rel="stylesheet">
+    <link href="maisematyylit.css" rel="stylesheet"> <!-- Erillinen CSS-tiedosto -->
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -16,115 +16,145 @@
 
     <!-- Navigointipalkki -->
     <nav class="navbar navbar-expand-sm navbar-custom fixed-top">
-      <div class="container-fluid" id="alku">
-          <!-- Logo -->
-          <a class="navbar-brand" href="#alku">
-              <img src="https://raw.githubusercontent.com/katjakoskela/bootstrap/main/maisemalogo.png" 
-                   alt="Verkkosivun logo. Yksinkertainen musta fineline maisemapiirros beigellä pohjalla.">
-          </a>
-          <!-- Hampurilaisvalikko -->
-          <button class="custom-toggler navbar-toggler d-sm-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul class="navbar-nav">
-                  <!-- Dropdown valikko Slideshow -->
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Slideshow
-                      </a>
-                      <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#kuva1">
-                              <img src="https://raw.githubusercontent.com/katjakoskela/bootstrap/main/maisemakuva3.png" 
-                                   alt="Talvimaisema" style="width: 100px; height: auto;">
-                              Kuva 1
-                          </a></li>
-                          <li><a class="dropdown-item" href="#kuva2">
-                              <img src="https://raw.githubusercontent.com/katjakoskela/bootstrap/main/maisemakuva5.png" 
-                                   alt="Utuinen metsä" style="width: 100px; height: auto;">
-                              Kuva 2
-                          </a></li>
-                      </ul>
-                  </li>
-  
-                  <li class="nav-item"><a class="nav-link" href="#grid">Grid</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#lomake">Lomake</a></li>
-              </ul>
-          </div>
-      </div>
-  </nav>  
+        <div class="container-fluid" id="alku">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#alku">
+                <img src="https://raw.githubusercontent.com/katjakoskela/bootstrap/main/maisemalogo.png" 
+                     alt="Verkkosivun logo. Yksinkertainen musta fineline maisemapiirros beigellä pohjalla.">
+            </a>
+            <!-- Hampurilaisvalikko -->
+            <button class="custom-toggler navbar-toggler d-sm-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <!-- Dropdown valikko Slideshow -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Slideshow
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#kuva1">
+                                <img src="https://raw.githubusercontent.com/katjakoskela/bootstrap/main/maisemakuva3.png" 
+                                     alt="Talvimaisema" style="width: 100px; height: auto;">
+                                Kuva 1
+                            </a></li>
+                            <li><a class="dropdown-item" href="#kuva2">
+                                <img src="https://raw.githubusercontent.com/katjakoskela/bootstrap/main/maisemakuva5.png" 
+                                     alt="Utuinen metsä" style="width: 100px; height: auto;">
+                                Kuva 2
+                            </a></li>
+                        </ul>
+                    </li>
 
-    <main id="slideshow" class="container-fluid" style="margin-top: 70px;">
-        <!-- Slideshow -->
-        <section id="slideshow">
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://raw.githubusercontent.com/katjakoskela/bootstrap/main/maisemakuva3.png" class="d-block w-100" alt="Talvimaisema. Kuva luotu tekoälyllä."> <!-- Kuva 1 -->
-                        <div class="carousel-caption">
-                            <h5>Talvimaisema</h5>
-                            <p>Tekoälyllä luotu kuva komennolla "Luo talvinen maisemakuva".</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://raw.githubusercontent.com/katjakoskela/bootstrap/main/maisemakuva5.png" class="d-block w-100" alt="Utuinen/sumuinen metsämaisema. Kuva luotu tekoälyllä."> <!-- Kuva 2 -->
-                        <div class="carousel-caption">
-                            <h5>Metsämaisema</h5>
-                            <p>Tekoälyllä luotu kuva komennolla "Luo sumuinen metsämaisema".</p>
-                        </div>
+                    <li class="nav-item"><a class="nav-link" href="#grid">Grid</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#lomake">Lomake</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>  
+
+    <!-- Cardit -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="https://raw.githubusercontent.com/katjakoskela/bootstrap/main/maisemakuva6.png" class="card-img-top" alt="Järvimaisema">
+                    <div class="card-body">
+                        <h5 class="card-title">Järvimaisema</h5>
+                        <p class="card-text">Tekoälyllä luotu järvimaisema.</p>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
             </div>
-        </section>
-
-        <!-- Gridi -->
-        <section id="grid" class="container mt-5">
-            <div class="row">
-                <div class="col-md-4"><img src="https://raw.githubusercontent.com/katjakoskela/bootstrap/main/maisemakuva6.png" class="img-fluid" alt="Järvimaisema. Kuva luotu tekoälyllä."></div> <!-- Kuva 3 -->
-                <div class="col-md-4"><p>Tällä sivustolla on esillä kauniita tekoälyllä luotuja kuvia.</p></div>
-                <div class="col-md-4"><img src="https://raw.githubusercontent.com/katjakoskela/bootstrap/main/maisemakuva7.png" class="img-fluid" alt="Järvimaisema. Kuva luotu tekoälyllä."></div> <!-- Kuva 4 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="https://raw.githubusercontent.com/katjakoskela/bootstrap/main/maisemakuva7.png" class="card-img-top" alt="Metsämaisema">
+                    <div class="card-body">
+                        <h5 class="card-title">Metsämaisema</h5>
+                        <p class="card-text">Tekoälyllä luotu metsän ja sumun yhdistelmä.</p>
+                    </div>
+                </div>
             </div>
-        </section>
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="https://raw.githubusercontent.com/katjakoskela/bootstrap/main/maisemakuva8.png" class="card-img-top" alt="Auringonlasku">
+                    <div class="card-body">
+                        <h5 class="card-title">Auringonlasku</h5>
+                        <p class="card-text">Tekoälyllä luotu auringonlaskun kuva.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="https://raw.githubusercontent.com/katjakoskela/bootstrap/main/maisemakuva9.png" class="card-img-top" alt="Vuorimaisema">
+                    <div class="card-body">
+                        <h5 class="card-title">Vuorimaisema</h5>
+                        <p class="card-text">Tekoälyllä luotu vuorimaisema.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <!-- Lomake -->
-        <section id="lomake" class="mt-5">
-            <form onsubmit="return false">
-                <div class="mb-3">
-                    <label for="nimi" class="form-label">Nimi:</label>
-                    <input type="text" class="form-control" id="nimi" required>
+    <!-- Accordion -->
+    <div class="container mt-5">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Osa 1: Kortit
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Tässä on kortteja, joissa on kuvia ja tekstiä. Kortit ryhmitellään vierekkäin.
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Sähköposti:</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="palaute" class="form-label">Palaute:</label>
-                    <textarea class="form-control" id="palaute" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary" onclick="submitForm()">Lähetä</button>
-            </form>
-            <div id="yhteenveto" class="mt-3"></div>
-        </section>
-    </main>
+            </div>
+        </div>
+    </div>
 
-    <script>
-        function submitForm() {
-            const nimi = document.getElementById('nimi').value;
-            const email = document.getElementById('email').value;
-            const palaute = document.getElementById('palaute').value;
-            document.getElementById('yhteenveto').innerHTML = `
-                <h5>Yhteenveto:</h5>
-                <p><strong>Nimi:</strong> ${nimi}</p>
-                <p><strong>Sähköposti:</strong> ${email}</p>
-                <p><strong>Palaute:</strong> ${palaute}</p>
-            `;
-        }
-    </script>
-</body>
-</html>
+    <!-- Tabs -->
+    <div class="container mt-5">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Tab 1</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Tab 2</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Tab 3</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" class="w-100" style="height: 300px;" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" class="w-100" style="height: 300px;" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" class="w-100" style="height: 300px;" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Yhteystiedot Taulukko -->
+    <div class="container mt-5">
+        <h2>Yhteystiedot</h2>
+        <table class="table table-responsive">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>johndoe@example.com</td>
+                    <td>123-456-7890</td>
+                </tr>
+               

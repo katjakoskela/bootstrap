@@ -1,6 +1,6 @@
-/*Poppins fontti koko sivulla*/
+/* Poppins fontti koko sivulla */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* navipalkin väri */
@@ -13,14 +13,14 @@ body {
     color: #4a3c31;
 }
 
-/* Navipalki  logon määrittely */
+/* Navipalkin logon määrittely */
 .navbar-brand img {
-        height: auto;
-        max-height: 50px;
-        width: auto;
-    }
+    height: auto;
+    max-height: 50px;
+    width: auto;
+}
 
-/* aktiivisen & hover-linkin väri */
+/* Aktiivisen & hover-linkin väri */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
     color: #7a5c45;
@@ -97,4 +97,73 @@ form .form-control {
 /* Taulukon responsiivisuus */
 .table-responsive {
     overflow-x: auto;
+}
+
+/* Korttien ulkoasu */
+.card {
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Accordionin otsikoiden värit */
+.accordion-button {
+    background-color: #d0b9a1;
+    color: #4a3c31;
+    font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #7a5c45;
+    color: white;
+}
+
+/* Tabs-välilehtien tyylit */
+.nav-tabs .nav-link {
+    border-color: transparent;
+    background-color: #d0b9a1;
+    color: #4a3c31;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #7a5c45;
+    color: white;
+}
+
+/* Taulukon värit */
+.table thead {
+    background-color: #7a5c45;
+    color: white;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Hover-efekti taulukon riveille */
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Lisätty hover-efekti taulukon riveille */
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Pieniä sääntöjä gridin kuville */
+.img-fluid {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Lisätty marginaali ja väri otsikoille */
+h2, h5 {
+    margin-top: 20px;
 }
