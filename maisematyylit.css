@@ -1,3 +1,10 @@
+/* Hampurilaisvalikon sijainti oikeassa reunassa pienillä näytöillä */
+@media (max-width: 576px) {
+    .navbar-custom .navbar-collapse {
+        justify-content: flex-end;
+    }
+}
+
 /* navipalkon väri*/
 .navbar-custom {
     background-color: #e0d2c3;
