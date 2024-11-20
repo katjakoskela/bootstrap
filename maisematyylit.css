@@ -26,7 +26,7 @@ body {
     color: #7a5c45;
 }
 
-/* Aktivoi linkin väri scroll-spy:n avulla */
+/* scroll-spy */
 .nav-link.active {
     color: white !important; /* Tekstin väri aktiiviselle linkille */
 }
