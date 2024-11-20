@@ -7,12 +7,12 @@
 
 /* navipalkin väri */
 .navbar-custom {
-    background-color: #e0d2c3;
+    background-color: #d0b9a1;
 }
 
 /* navipalkin linkin väri */
 .navbar-custom a {
-    color: #4f4b46;
+    color: #4a3c31;
 }
 
 /* Navipalki  logon määrittely */
@@ -25,22 +25,22 @@
 /* aktiivisen & hover-linkin väri */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-    color: #58515a;
+    color: #7a5c45;
 }
 
 /* hampurilaiskuvion väri */
 .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#332d2f' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#4b3b2f' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 /* hampurilaiskuvion reunan väri */
 .custom-toggler .navbar-toggler {
-    border-color: #576e62;
+    border-color: #6c4e3b;
 }
 
 /* alasvetovalikon linkkien väri */
 .dropdown .dropdown-item {
-    color: #4f4b46 !important;
+    color: #5a4636 !important;
 }
 
 /* Karusellin kuvat */
