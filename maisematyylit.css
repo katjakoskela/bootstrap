@@ -1,8 +1,6 @@
-/* Hampurilaisvalikon sijainti oikeassa reunassa pienillä näytöillä */
-@media (max-width: 576px) {
-    .navbar-custom .navbar-collapse {
-        justify-content: flex-end;
-    }
+/*Roboto fontti koko sivulla*/
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 /* navipalkin väri */
@@ -26,6 +24,13 @@
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
     color: #7a5c45;
+}
+
+/* Hampurilaisvalikon sijainti oikeassa reunassa pienillä näytöillä */
+@media (max-width: 576px) {
+    .navbar-custom .navbar-collapse {
+        justify-content: flex-end;
+    }
 }
 
 /* hampurilaiskuvion väri */
