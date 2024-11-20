@@ -1,8 +1,7 @@
 /* Lora fontti */
 body {
-    font-family: 'Lora', serif;
+    font-family: 'Dancing Script', cursive;
 }
-
 
 /* Tekstiosion marginaali, jotta se ei mene navigaatiopalkin alle */
 #tekstiosio {
