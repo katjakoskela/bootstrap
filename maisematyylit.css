@@ -26,11 +26,6 @@ body {
     color: #7a5c45;
 }
 
-/* scroll-spy */
-.nav-link.active {
-    color: white !important; /* Tekstin väri aktiiviselle linkille */
-}
-
 /* Hampurilaisvalikon sijainti oikeassa reunassa pienillä näytöillä */
 @media (max-width: 576px) {
     .navbar-custom .navbar-collapse {
@@ -48,28 +43,6 @@ body {
     border-color: #6c4e3b;
 }
 
-/* alasvetovalikon linkkien väri */
-.nav-item.dropdown .dropdown-toggle {
-    color: #4a3c31; /* Linkin väri */
-}
-
-.nav-item.dropdown:hover .dropdown-toggle {
-    color: #7a5c45; /* Hover-tilan väri */
-}
-
-.dropdown-menu {
-    background-color: #d0b9a1; /* Taustan väri dropdownille */
-}
-
-.dropdown-item {
-    color: #4a3c31; /* Linkin väri */
-}
-
-.dropdown-item:hover {
-    background-color: #7a5c45; /* Hover-tilan taustaväri */
-    color: white; /* Hover-tilan tekstin väri */
-}
-
 /* Karusellin kuvat */
 .carousel-inner img {
     width: 70%;
@@ -83,23 +56,12 @@ body {
     padding: 10px;
 }
 
-/* Grid-asettelun kuvat */
-#grid img {
-    max-width: 100%;
-    border-radius: 30%; /* Pyöristetyt kulmat */
-}
-
 /* Lomakekentät */
 form .form-control {
     border-radius: 5px;
 }
 
-/* Taulukon responsiivisuus */
-.table-responsive {
-    overflow-x: auto;
-}
-
-/* Korttien ulkoasu */
+/* Cardit */
 .card {
     margin-bottom: 20px;
 }
@@ -109,7 +71,7 @@ form .form-control {
     object-fit: cover;
 }
 
-/* Accordionin otsikoiden värit */
+/* Accordion */
 .accordion-button {
     background-color: #d0b9a1;
     color: #4a3c31;
@@ -121,7 +83,7 @@ form .form-control {
     color: white;
 }
 
-/* Tabs-välilehtien tyylit */
+/* Tabs */
 .nav-tabs .nav-link {
     border-color: transparent;
     background-color: #d0b9a1;
@@ -147,23 +109,16 @@ form .form-control {
     background-color: #ffffff;
 }
 
-/* Hover-efekti taulukon riveille */
 .table tbody tr:hover {
     background-color: #f1f1f1;
 }
 
-/* Lisätty hover-efekti taulukon riveille */
-.table tbody tr:hover {
-    background-color: #f1f1f1;
-}
-
-/* Pieniä sääntöjä gridin kuville */
+/* Grid */
 .img-fluid {
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
-/* Lisätty marginaali ja väri otsikoille */
 h2, h5 {
     margin-top: 20px;
 }

@@ -54,6 +54,34 @@
         </div>
     </nav>  
 
+    <!-- Slideshow -->
+    <div id="slideshow" class="container mt-5">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://raw.githubusercontent.com/katjakoskela/bootstrap/main/maisemakuva3.png" class="d-block w-100" alt="Talvimaisema">
+                    <div class="carousel-caption">
+                        <h5>Talvimaisema</h5>
+                        <p>Tekoälyllä luotu talvinen maisemakuva.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://raw.githubusercontent.com/katjakoskela/bootstrap/main/maisemakuva5.png" class="d-block w-100" alt="Utuinen metsä">
+                    <div class="carousel-caption">
+                        <h5>Utuinen Metsä</h5>
+                        <p>Tekoälyllä luotu utuinen metsän maisema.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
     <!-- Cardit -->
     <div class="container mt-5">
         <div class="row">
@@ -96,123 +124,93 @@
         </div>
     </div>
 
-    <!-- Accordion -->
-    <div class="container mt-5">
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Osa 1: Kortit
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Tässä on kortteja, joissa on kuvia ja tekstiä. Kortit ryhmitellään vierekkäin.
-                    </div>
+    <!-- Lomake -->
+    <div class="container mt-5" id="lomake">
+        <h2>Lomake</h2>
+        <form id="myForm" onsubmit="return false">
+            <div class="mb-3">
+                <label for="nimi" class="form-label">Nimi:</label>
+                <input type="text" class="form-control" id="nimi" required placeholder="Anna nimesi">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Sähköposti:</label>
+                <input type="email" class="form-control" id="email" required placeholder="Anna sähköpostiosoitteesi">
+            </div>
+            <div class="mb-3">
+                <label for="puhelin" class="form-label">Puhelin:</label>
+                <input type="tel" class="form-control" id="puhelin" pattern="\+?[0-9 () \-]+" placeholder="Anna puhelinnumerosi">
+            </div>
+            <div class="mb-3">
+                <label for="palaute" class="form-label">Palaute:</label>
+                <textarea class="form-control" id="palaute" rows="3" placeholder="Anna palautteesi"></textarea>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Onko taivas sininen:</label>
+                <div>
+                    <input type="radio" id="kylla" name="vastaus" value="Kyllä" required> <label for="kylla">Kyllä</label>
+                    <input type="radio" id="ei" name="vastaus" value="Ei"> <label for="ei">Ei</label>
                 </div>
             </div>
-        </div>
+            <div class="mb-3">
+                <label class="form-label">Lempi aktiviteetti luonnossa:</label>
+                <div>
+                    <input type="checkbox" id="lenkkeily" name="aktiviteetti" value="Lenkkeily"> <label for="Lenkkeily">Lenkkeily</label>
+                    <input type="checkbox" id="bongaus" name="aktiviteetti" value="Bongaus"> <label for="Bongaus">Bongaus</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="valinta" class="form-label">Maa:</label>
+                <select class="form-control" id="valinta">
+                    <option value="Suomi">Suomi</option>
+                    <option value="Egypti">Egypti</option>
+                    <option value="Yhdysvallat">Yhdysvallat</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="tulostaTiedot()">Lähetä</button>
+        </form>
     </div>
 
-    <!-- Tabs -->
-    <div class="container mt-5">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Tab 1</a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Tab 2</a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Tab 3</a>
-            </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" class="w-100" style="height: 300px;" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" class="w-100" style="height: 300px;" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" class="w-100" style="height: 300px;" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
+    <!-- Yhteenveto -->
+    <div id="tiedot" class="container mt-5">
+        <h3>Lomakkeen tiedot</h3>
+        <p id="tiedotNimi"></p>
+        <p id="tiedotEmail"></p>
+        <p id="tiedotPuhelin"></p>
+        <p id="tiedotPalaute"></p>
+        <p id="tiedotVastaus"></p>
+        <p id="tiedotAktiviteetti"></p>
+        <p id="tiedotMaa"></p>
     </div>
 
-    <!-- Lomake -->
-<div class="container mt-5" id="lomake">
-  <h2>Lomake</h2>
-  <form id="myForm" onsubmit="return false">
-      <div class="mb-3">
-          <label for="nimi" class="form-label">Nimi:</label>
-          <input type="text" class="form-control" id="nimi" required placeholder="Anna nimesi">
-      </div>
-      <div class="mb-3">
-          <label for="email" class="form-label">Sähköposti:</label>
-          <input type="email" class="form-control" id="email" required placeholder="Anna sähköpostiosoitteesi">
-      </div>
-      <div class="mb-3">
-          <label for="puhelin" class="form-label">Puhelin:</label>
-          <input type="tel" class="form-control" id="puhelin" pattern="\+?[0-9 () \-]+" placeholder="Anna puhelinnumerosi">
-      </div>
-      <div class="mb-3">
-          <label for="palaute" class="form-label">Palaute:</label>
-          <textarea class="form-control" id="palaute" rows="3" placeholder="Anna palautteesi"></textarea>
-      </div>
-      <div class="mb-3">
-          <label class="form-label">Onko taivas sininen:</label>
-          <div>
-              <input type="radio" id="kylla" name="vastaus" value="Kyllä" required> <label for="kylla">Kyllä</label>
-              <input type="radio" id="ei" name="vastaus" value="Ei"> <label for="ei">Ei</label>
-          </div>
-      </div>
-      <div class="mb-3">
-          <label class="form-label">Lempi aktivitetti luonnossa:</label>
-          <div>
-              <input type="checkbox" id="lenkkeily" name="aktiviteetti" value="Lenkkeily"> <label for="Lenkkeily">Lenkkeily</label>
-              <input type="checkbox" id="bongaus" name="aktiviteetti" value="Bongaus"> <label for="Bongaus">Bongaus</label>
-          </div>
-      </div>
-      <div class="mb-3">
-          <label for="valinta" class="form-label">Maa:</label>
-          <select class="form-control" id="valinta">
-              <option value="Helsinki">Suomi</option>
-              <option value="Tampere">Egypti</option>
-              <option value="Turku">Yhtysvallat</option>
-          </select>
-      </div>
-      <button type="submit" class="btn btn-primary" onclick="tulostaTiedot()">Lähetä</button>
-  </form>
-</div>
+    <script>
+        // JavaScript funktio lomakkeen tietojen tulostamiseen
+        function tulostaTiedot() {
+            var nimi = document.getElementById("nimi").value;
+            var email = document.getElementById("email").value;
+            var puhelin = document.getElementById("puhelin").value;
+            var palaute = document.getElementById("palaute").value;
 
-<!-- Yhteenveto -->
-<div id="tiedot" class="container mt-5">
-  <h3>Lomakkeen tiedot</h3>
-  <p id="tiedotNimi"></p>
-  <p id="tiedotEmail"></p>
-  <p id="tiedotPuhelin"></p>
-  <p id="tiedotPalaute"></p>
-  <p id="tiedotSukupuoli"></p>
-  <p id="tiedotHarrastukset"></p>
-  <p id="tiedotKaupunki"></p>
-</div>
+            var sukupuoli = document.querySelector('input[name="vastaus"]:checked') ? document.querySelector('input[name="vastaus"]:checked').value : "Ei valittu";
+            var harrastukset = [];
+            var harrastusElements = document.getElementsByName("aktiviteetti");
+            for (var i = 0; i < harrastusElements.length; i++) {
+                if (harrastusElements[i].checked) {
+                    harrastukset.push(harrastusElements[i].value);
+                }
+            }
+            harrastukset = harrastukset.length > 0 ? harrastukset.join(", ") : "Ei valittu";
 
-    <!-- Yhteystiedot Taulukko -->
-    <div class="container mt-5">
-        <h2>Yhteystiedot</h2>
-        <table class="table table-responsive">
-            <thead>
-                <tr>
-                    <th>Nimi</th>
-                    <th>Sähköposti</th>
-                    <th>Puhelin</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Katja Koskela</td>
-                    <td>katja@maisemat.com</td>
-                    <td>040 456 7890</td>
-                </tr>
-               
+            var kaupunki = document.getElementById("valinta").value;
+
+            document.getElementById("tiedotNimi").innerHTML = "Nimi: " + nimi;
+            document.getElementById("tiedotEmail").innerHTML = "Sähköposti: " + email;
+            document.getElementById("tiedotPuhelin").innerHTML = "Puhelin: " + puhelin;
+            document.getElementById("tiedotPalaute").innerHTML = "Palaute: " + palaute;
+            document.getElementById("tiedotSukupuoli").innerHTML = "Onko taivas sininen: " + sukupuoli;
+            document.getElementById("tiedotHarrastukset").innerHTML = "Aktiviteetti luonnossa: " + harrastukset;
+            document.getElementById("tiedotKaupunki").innerHTML = "Maa: " + kaupunki;
+        }
+    </script>
+
+</body>
+</html>
